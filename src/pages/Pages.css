@@ -1,0 +1,47 @@
+.course-in {
+    background: linear-gradient(135deg,
+            #ffb36b 0%,
+            #f47f45 100%,
+);
+}
+.course-in h1 {
+text-align: center;
+padding: 2rem;
+color: #e78311;
+}
+.course-in > p{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    max-width:800px;
+    word-wrap: normal;
+}
+.course-card{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.degree-cont{
+    max-width: 500px;
+    background: rgba(156, 152, 146, 0.34);
+    backdrop-filter: blur(10px);
+    padding: 5px;
+    border-radius: 20px;
+    cursor: default;
+    transition: all 0.8s;
+
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 24px 0px;
+        transform: translateY(-10px);
+    }
+}
+.degree-abv, .degree-info{
+    text-align: center;
+    width: 300px;
+}
+.degree-info{
+    border-top: #e78311 solid 1px;
+    padding: 10px;
+}

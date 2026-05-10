@@ -1,0 +1,69 @@
+.camp-img-div {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.fade-in-para {
+    opacity: 0;
+    text-align: center;
+    position: relative;
+    top: 60%;
+    color: #fff7ee;
+    transition: all 0.5s ease-in-out;
+    /* font-size: 1.2rem; */
+}
+
+.img-div {
+    background: url("src/assets/a-man-with-laptop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 400px;
+    border-radius: 30px;
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 24px 0px;
+        transform: translateY(-10px);
+    }
+    transition: all 0.5s;
+
+}
+
+.div2{
+    background: url("src/assets/coding-image.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 400px;
+    border-radius: 30px;
+}
+
+.div3{
+    background: url("src/assets/two-programmers-staring-at-a-screen.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 400px;
+    border-radius: 30px;
+}
+
+.img-div:hover .fade-in-para {
+    opacity: 1;
+    position: relative;
+    top: 60%;
+    transform: translateY(-80%);
+}
+
+
+.campus-img {
+    width: 250px;
+    height: 400px;
+    border-radius: 30px;
+    object-fit: cover;
+    transition: all 0.8s;
+
+}

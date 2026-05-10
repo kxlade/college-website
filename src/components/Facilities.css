@@ -1,0 +1,27 @@
+.facilities-img{
+    width: 314px;
+    height: 209px;
+    border-radius: 20px;
+    transition: all 0.8s;
+}
+.facilities-img:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 24px 0px;
+    transform: translateY(-10px);
+}
+.facilities-img-cont{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.footer{
+    background: #2f1f12;
+    color: #fff7ee;
+    text-align: center;
+    margin: 20px;
+    padding: 1rem;
+}
+
+.footer-logo{
+    width: 80px;
+    height: 60px;
+}

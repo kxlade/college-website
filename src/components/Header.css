@@ -1,0 +1,43 @@
+.header-main {
+    background: url("src/assets/person-coding.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    padding: 0.3rem;
+}
+
+.course-intro {
+    padding: 10px;
+    line-height: normal;
+    text-align: center;
+}
+
+.header-para {
+    text-align: center;
+    align-self: center;
+    max-width: 600px;
+    font-size: 1.2rem;
+    color: #fff7ee;
+}
+
+.addmision-btn {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    width: 150px;
+    align-self: center;
+    text-align: center;
+    background: transparent;
+    color: #f6e9da;
+    margin-top: 60px;
+    padding: 0.75rem 1rem;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.header-main main{
+    align-self: center;
+    text-align: center;
+}
