@@ -21,6 +21,15 @@
 
 </div>
 
+## 🎁 Surprise Bonus
+
+Think you’ve seen it all? Click below for a *a schorlaship* to the college...
+
+<a href="https://www.icegif.com/wp-content/uploads/2023/01/icegif-162.gif" target="_blank">
+  <img src="https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif" alt="Click for a surprise!" width="200" />
+</a>
+
+
 ---
 
 ## Live Demo
