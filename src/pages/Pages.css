@@ -1,47 +1,300 @@
-.course-in {
-    background: linear-gradient(135deg,
-            #ffb36b 0%,
-            #f47f45 100%,
-);
+.course-out {
+    padding: clamp(2.5rem, 4vw, 4rem) 0;
 }
-.course-in h1 {
-text-align: center;
-padding: 2rem;
-color: #e78311;
-}
-.course-in > p{
-    text-align: center;
-    align-items: center;
-    margin: auto;
-    max-width:800px;
-    word-wrap: normal;
-}
-.course-card{
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-}
-.degree-cont{
-    max-width: 500px;
-    background: rgba(156, 152, 146, 0.34);
-    backdrop-filter: blur(10px);
-    padding: 5px;
-    border-radius: 20px;
-    cursor: default;
-    transition: all 0.8s;
 
-    &:hover{
-        box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 24px 0px;
-        transform: translateY(-10px);
+.course-in {
+    background: linear-gradient(180deg, rgba(13, 23, 40, 0.96), rgba(10, 19, 34, 0.98));
+    border: 1px solid rgba(148, 163, 184, 0.14);
+    border-radius: 2rem;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
+}
+
+.course-heading {
+    max-width: 760px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.course-eyebrow {
+    margin-bottom: 0.75rem;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8eb8e4;
+}
+
+.course-in h1 {
+    margin: 0 0 1rem;
+    color: #f4f7fb;
+    text-align: center;
+}
+
+.course-in>p,
+.course-heading>p {
+    margin: 0 auto;
+    max-width: 640px;
+    color: #b7c7da;
+    text-align: center;
+}
+
+.course-card {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.degree-cont {
+    overflow: hidden;
+    background: rgba(17, 31, 52, 0.9);
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 1.5rem;
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.18);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.degree-cont:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 42px rgba(0, 0, 0, 0.24);
+}
+
+.degree-image {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.degree-copy {
+    padding: 1.25rem;
+}
+
+.degree-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.degree-abv {
+    margin: 0;
+    text-align: left;
+    color: #f4f7fb;
+}
+
+.degree-toggle {
+    flex-shrink: 0;
+    padding: 0.75rem 1rem;
+    border: 0;
+    border-radius: 999px;
+    background: #dce8f7;
+    color: #0d1827;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.degree-toggle:hover {
+    transform: translateY(-1px);
+    background: #a7c4e5;
+}
+
+.degree-cont-open .degree-toggle {
+    background: #8eb8e4;
+}
+
+.degree-details {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.degree-info {
+    color: #c7d5e5;
+    text-align: left;
+}
+
+.degree-focus-list {
+    margin: 1rem 0 0;
+    padding-left: 1.1rem;
+    color: #b7c7da;
+    text-align: left;
+}
+
+.degree-focus-list li+li {
+    margin-top: 0.5rem;
+}
+
+.admission-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    max-width: 520px;
+    margin: 0 auto 3rem;
+    padding: clamp(1.25rem, 4vw, 2rem);
+    background: rgba(13, 23, 40, 0.94);
+    border: 1px solid rgba(148, 163, 184, 0.14);
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.18);
+    text-align: left;
+}
+
+.admission-form label {
+    font-weight: 700;
+    color: #e6eef8;
+}
+
+.admission-form div {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.admission-form input,
+.admission-form select,
+.admission-form textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    border-radius: 0.9rem;
+    background: #111f34;
+    color: #eef4fb;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.admission-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.admission-form input::placeholder,
+.admission-form textarea::placeholder {
+    color: #8fa3ba;
+    opacity: 0.9;
+}
+
+.admission-form .submit-btn,
+.clear-butn {
+    padding: 0.9rem 1rem;
+    border: 0;
+    border-radius: 999px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.admission-form .submit-btn {
+    background: #dce8f7;
+    color: #0d1827;
+}
+
+.clear-butn {
+    background: rgba(220, 232, 247, 0.08);
+    color: #e6eef8;
+}
+
+.gender-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: flex-start;
+}
+
+.gender-options label {
+    padding: 0.5rem;
+    text-align: center;
+    background: #111f34;
+    color: #dce8f7;
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    width: 100px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 180ms ease;
+
+}
+
+.gender-option:hover {
+    background: #1a2c4b;
+    color: #dce8f7;
+    border-color: rgba(148, 163, 184, 0.28);
+}
+
+.radio {
+    display: none;
+}
+
+.gender-option:has(.radio:checked),
+.radio:checked + .gender-option,
+.radio:checked + label {
+    background: #dce8f7;
+    color: #0d1827;
+    border-color: rgba(148, 163, 184, 0.28);
+}
+
+.gender-option:hover {
+    background: #1a2c4b;
+    color: #dce8f7;
+    border-color: rgba(148, 163, 184, 0.28);
+}
+
+.gender-option.active {
+    background: #dce8f7;
+    color: #0d1827;
+    border-color: rgba(148, 163, 184, 0.28);
+}
+
+.gender #phone {
+    width: 100%;
+    min-height: 140px;
+}
+
+@media (max-width: 960px) {
+    .course-card {
+        grid-template-columns: 1fr;
     }
 }
-.degree-abv, .degree-info{
-    text-align: center;
-    width: 300px;
+
+@media (max-width: 720px) {
+    .course-in {
+        border-radius: 1.5rem;
+        padding: 1.25rem;
+    }
+
+    .degree-top-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .degree-toggle {
+        width: 100%;
+    }
+
+    .admission-form {
+        margin-inline: 0.5rem;
+    }
+
+    .gender-options {
+        flex-direction: column;
+    }
+
+    .gender-option,
+    .gender-option span {
+        width: 100%;
+    }
 }
-.degree-info{
-    border-top: #e78311 solid 1px;
-    padding: 10px;
+
+@media (max-width: 520px) {
+    .degree-image {
+        height: 190px;
+    }
+
+    .course-eyebrow {
+        letter-spacing: 0.12em;
+    }
+}
+
+#phone {
+    width: 235px;
+    height: 101px;
 }

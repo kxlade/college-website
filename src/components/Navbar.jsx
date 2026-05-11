@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars} from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faContactBook } from "@fortawesome/free-regular-svg-icons";
+import logo from "../assets/Aptech_V.png";
 
 const navItems = [
     { label: "Home", page: "home" },
@@ -23,7 +24,7 @@ export default function Navbar({ currentPage, onNavigate }) {
             <nav className="nav-cont" aria-label="Primary">
                 <button type="button" className="brand" onClick={() => handleNavigationClick("home")}>
                     <span className="brand-copy">
-                        <img src="src/assets/Aptech_V.png" alt="Aptech Logo" className="brand-badge" />
+                        <img src={logo} alt="Aptech Logo" className="brand-badge" />
                     </span>
                 </button>
 
@@ -57,10 +58,10 @@ export default function Navbar({ currentPage, onNavigate }) {
                     <button
                         type="button"
                         className={`nav-cta ${currentPage === "contact" ? "nav-cta-active" : ""}`}
-                        aria-current={currentPage === "contact" ? "page" : ""}
+                        aria-current={currentPage === "contact" ? "page" : undefined}
                         onClick={() => handleNavigationClick("contact")}
                     >
-                        Contact Us <FontAwesomeIcon icon={faContactBook}/>
+                        Contact Us <FontAwesomeIcon icon={faContactBook} />
                     </button>
                 </div>
             </nav>

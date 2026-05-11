@@ -14,7 +14,7 @@ const words = [
     "Game Development ",
 ];
 
-const Header = () => {
+const Header = ({ onNavigate }) => {
     const [wordIndex, setWordIndex] = useState(0);
     const [charIndex, setCharIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
@@ -22,14 +22,14 @@ const Header = () => {
 
     useEffect(() => {
         const currentWord = words[wordIndex];
-        let timeoutSpeed = isDeleting ? 30 : 100;
+        let timeoutSpeed = isDeleting ? 70 : 170;
 
         if (!isDeleting && charIndex === currentWord.length) {
-            timeoutSpeed = 1200;
+            timeoutSpeed = 1600;
         }
 
         if (isDeleting && charIndex === 0) {
-            timeoutSpeed = 300;
+            timeoutSpeed = 450;
         }
 
         const timeoutId = setTimeout(() => {
@@ -56,6 +56,14 @@ const Header = () => {
         return () => clearTimeout(timeoutId);
     }, [wordIndex, charIndex, isDeleting]);
 
+    const handleNavigationClick = (page) => {
+        onNavigate(page);
+    };
+
+
+
+
+
     return (
         <header>
             <div className="header-main">
@@ -70,7 +78,9 @@ const Header = () => {
                         needed to excel in the ever-evolving tech industry.
                     </p>
 
-                    <button className="addmision-btn">Addmission Open</button>
+                    <button className="addmision-btn"
+                        onClick={() => handleNavigationClick("admission")}
+                    >Admission Open</button>
                 </main>
             </div>
         </header>

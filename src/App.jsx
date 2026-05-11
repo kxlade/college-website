@@ -8,6 +8,7 @@ import Admission from './pages/Admission';
 import Fees from './pages/Fees';
 import Contact from './pages/Contact';
 import { useEffect, useState } from 'react';
+import Footer from './components/Footer';
 
 
 function Home({ onNavigate }) {
@@ -17,6 +18,7 @@ function Home({ onNavigate }) {
       <Course />
       <Campus />
       <Facilities />
+      <Footer />
     </div>
   );
 }
@@ -48,7 +50,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar onNavigate={handleNavigate} />
+      <Navbar currentPage={currentPage} onNavigate={handleNavigate} />
       <main className="main">
         {pageByName[currentPage] ?? <Home onNavigate={handleNavigate} />}
       </main>
