@@ -6,7 +6,7 @@ const Admission = () => {
     return (
         <div>
             <h1>Admission Form</h1>
-            <form action="/submit-admission" className="admission-form">
+            <form action="/submit-admission" className="main-form">
                 <label htmlFor="name">Name :</label>
                 <div>
                     <FontAwesomeIcon icon={faPerson} />

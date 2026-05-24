@@ -126,7 +126,7 @@
     margin-top: 0.5rem;
 }
 
-.admission-form {
+.main-form {
     display: flex;
     flex-direction: column;
     gap: 0.85rem;
@@ -140,20 +140,20 @@
     text-align: left;
 }
 
-.admission-form label {
+.main-form label {
     font-weight: 700;
     color: #e6eef8;
 }
 
-.admission-form div {
+.main-form div {
     display: flex;
     align-items: center;
     gap: 0.75rem;
 }
 
-.admission-form input,
-.admission-form select,
-.admission-form textarea {
+.main-form input,
+.main-form select,
+.main-form textarea {
     width: 100%;
     padding: 0.9rem 1rem;
     border: 1px solid rgba(148, 163, 184, 0.18);
@@ -164,18 +164,18 @@
     box-sizing: border-box;
 }
 
-.admission-form textarea {
+.main-form textarea {
     min-height: 140px;
     resize: vertical;
 }
 
-.admission-form input::placeholder,
-.admission-form textarea::placeholder {
+.main-form input::placeholder,
+.main-form textarea::placeholder {
     color: #8fa3ba;
     opacity: 0.9;
 }
 
-.admission-form .submit-btn,
+.main-form .submit-btn,
 .clear-butn {
     padding: 0.9rem 1rem;
     border: 0;
@@ -184,7 +184,7 @@
     cursor: pointer;
 }
 
-.admission-form .submit-btn {
+.main-form .submit-btn {
     background: #dce8f7;
     color: #0d1827;
 }
@@ -270,7 +270,7 @@
         width: 100%;
     }
 
-    .admission-form {
+    .main-form {
         margin-inline: 0.5rem;
     }
 

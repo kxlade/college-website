@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faBars } from "@fortawesome/free-solid-svg-icons";
 import { faContactBook } from "@fortawesome/free-regular-svg-icons";
 import logo from "../assets/Aptech_V.png";
 
@@ -22,7 +22,11 @@ export default function Navbar({ currentPage, onNavigate }) {
     return (
         <div className={`site-header ${isMenuOpen ? "menu-open" : ""}`} id="home">
             <nav className="nav-cont" aria-label="Primary">
-                <button type="button" className="brand" onClick={() => handleNavigationClick("home")}>
+                <button
+                    type="button"
+                    className="brand"
+                    onClick={() => handleNavigationClick("home")}
+                >
                     <span className="brand-copy">
                         <img src={logo} alt="Aptech Logo" className="brand-badge" />
                     </span>
@@ -32,7 +36,9 @@ export default function Navbar({ currentPage, onNavigate }) {
                     type="button"
                     className="menu-toggle"
                     aria-expanded={isMenuOpen}
-                    aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+                    aria-label={
+                        isMenuOpen ? "Close navigation menu" : "Open navigation menu"
+                    }
                     onClick={() => setIsMenuOpen((open) => !open)}
                 >
                     <FontAwesomeIcon icon={faBars} />
@@ -46,10 +52,15 @@ export default function Navbar({ currentPage, onNavigate }) {
                             <button
                                 key={item.page}
                                 type="button"
+                                aria-description={item.label}
+                                aria-label={item.label}
                                 className={`nav-link ${isActive ? "nav-link-active" : ""}`}
                                 aria-current={isActive ? "page" : undefined}
                                 onClick={() => handleNavigationClick(item.page)}
                             >
+                                <p className="fade-para">
+                                    {item.label} <br /> <FontAwesomeIcon icon={faArrowDown} />
+                                </p>
                                 {item.label}
                             </button>
                         );
