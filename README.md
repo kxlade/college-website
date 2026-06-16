@@ -21,12 +21,24 @@
 
 </div>
 
+## 🎁 Surprise Bonus
+
+Think you’ve seen it all? Click below for a *a schorlaship* to the college...
+
+<div align="center">
+  <a href="https://www.icegif.com/wp-content/uploads/2023/01/icegif-162.gif" target="_blank">
+  <img src="https://camo.githubusercontent.com/bbd19fac9afae8a4f26cf2ffefddc57e52f996e627be6ce03760a121442e1d6d/68747470733a2f2f6d656469612e74656e6f722e636f6d2f4f443544786e7955614c67414141414d2f67616c6178792d627261696e2e676966" alt="Click for a surprise!" width="400" height="300" align="center" />
+</a>
+</div>
+
+
+
 ---
 
 ## Live Demo
 
 **Curious what the campus looks like when the lights turn on?**  
-Step through the front gate here: [origami-folder.vercel.app](https://origami-folder.vercel.app)
+Step through the front gate here: [college-website-kxlade.netlify.app](https://college-website-kxlade.netlify.app)
 
 Want the freshly deployed Netlify version too? Jump here: [college-website-kxlade.netlify.app](https://college-website-kxlade.netlify.app)
 
@@ -34,11 +46,13 @@ Want the freshly deployed Netlify version too? Jump here: [college-website-kxlad
 
 ## Snapshot
 
-[![College Website Preview](./src/assets/hero.png)](https://origami-folder.vercel.app)
+<a href="https://college-website-kxlade.netlify.app">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWJzMHZmaDl5dDlzZHpvY256N2p4NWNyZmFlOTB6dTVzZzlqaG0yayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/x0czCNIUmcfYlMe2s7/giphy.gif" alt="College Website Preview" width="300" />
+</a>
 
-<p align="center">
+<h2 align="center">
   <sub>Click the preview for a quick tour. It behaves better than most student portals.</sub>
-</p>
+</h2>
 
 ---
 
@@ -112,8 +126,6 @@ Production deployment:
 - Live site: [college-website-kxlade.netlify.app](https://college-website-kxlade.netlify.app)
 - Deploy details: [latest production deploy](https://app.netlify.com/projects/college-website-kxlade/deploys/6a0226b79713bb8dc84ac234)
 
-If you are peeking through the repo before class starts, the Vercel showcase is here:
-[Launch the live demo](https://origami-folder.vercel.app)
 
 <!-- Tiny note for the observant: if you found this comment, you probably click suspicious buttons on purpose. -->
 
@@ -179,15 +191,12 @@ Proceed responsibly.
 
 ## Classified Corner
 
-### Obvious Bait
+<p size="200">Totally Normal Bonus Content</p>
+<a href="https://www.icegif.com/wp-content/uploads/2023/01/icegif-162.gif">
+  <img src="https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif" width="250" />
+</a>
 
-[![Totally Normal Bonus Content](https://www.icegif.com/wp-content/uploads/2023/01/icegif-162.gif)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
-<p align="center">
-  <sub>Absolutely not a trap. Probably. Maybe.</sub>
-</p>
-
-### Subtle Bait
 
 [![Secret Dev Notes](https://img.shields.io/badge/Secret%20Dev%20Notes-Open%20Internal%20Docs-111827?style=for-the-badge&logo=files&logoColor=white)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 [![Final Hidden Feature](https://img.shields.io/badge/Final%20Hidden%20Feature-Download%20UI%20Pack-1d4ed8?style=for-the-badge&logo=dropbox&logoColor=white)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
@@ -204,12 +213,3 @@ Software Engineering Student
 - LinkedIn: [kolade-onasanya-b923a8409](https://www.linkedin.com/in/kolade-onasanya-b923a8409/)
 - Instagram: [@kxlxde](https://www.instagram.com/kxlxde/)
 - GitHub: [@kxlade](https://github.com/kxlade)
-
----
-
-## One Last Click
-
-If you want the clean version, open the live site.  
-If you want the chaotic version, explore the README.
-
-[View the project in action](https://origami-folder.vercel.app)
