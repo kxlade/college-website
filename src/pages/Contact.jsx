@@ -5,7 +5,7 @@ import "./Pages.css";
 const Contact = () => {
     return (
         <div>
-            <h1>Contact Form</h1>
+            <h1>Contact Form <FontAwesomeIcon icon={faPhone} shake /></h1>
             <form action="/submit-admission" className="main-form">
                 <label htmlFor="name">Your Name :</label>
                 <div>

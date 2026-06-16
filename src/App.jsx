@@ -9,6 +9,11 @@ import Fees from './pages/Fees';
 import Contact from './pages/Contact';
 import { useEffect, useState } from 'react';
 import Footer from './components/Footer';
+import { Dashboard } from './components/Dashboard';
+import { Messages } from './pages/Messages';
+import { Calendar } from './pages/Calendar';
+import { Attendance } from './pages/Attendance';
+import { Settings } from './pages/Settings';
 
 
 function Home({ onNavigate }) {
@@ -41,20 +46,40 @@ function App() {
   const pageByName = {
     home: <Home onNavigate={handleNavigate} />,
     admission: <Admission />,
+    dashboard: <Dashboard onNavigate={handleNavigate} />,
     course: <Course onNavigate={handleNavigate} />,
     fees: <Fees onNavigate={handleNavigate} />,
-    contact: <Contact />
+    contact: <Contact />,
+    messages: <Messages onNavigate={handleNavigate} />,
+    calendar: <Calendar onNavigate={handleNavigate} />,
+    attendance: <Attendance onNavigate={handleNavigate} />,
+    settings: <Settings onNavigate={handleNavigate} />
   };
 
 
 
   return (
-    <div className="App">
-      <Navbar currentPage={currentPage} onNavigate={handleNavigate} />
-      <main className="main">
-        {pageByName[currentPage] ?? <Home onNavigate={handleNavigate} />}
-      </main>
-    </div>
+    <>
+      <div className='app-h1'>
+        <h1>This Only works on Laptops and Computers with bigger Screens For Now LOL😅</h1>
+      </div>
+
+      <div className='app-h1_2'>
+        <h1>Almost there!</h1>
+      </div>
+
+      <div className='app-h1_3'>
+        <h1>Almosttt 🐦‍🔥🔥</h1>
+      </div>
+
+      <div className="App">
+        <Navbar currentPage={currentPage} onNavigate={handleNavigate} />
+        <main className="main">
+          {pageByName[currentPage] ?? <Home onNavigate={handleNavigate} />}
+        </main>
+      </div>
+    </>
+
   );
 }
 

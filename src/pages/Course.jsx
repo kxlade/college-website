@@ -4,6 +4,8 @@ import personCoding from "../assets/person-coding.jpg";
 import codingImage from "../assets/coding-image.webp";
 import laptopSession from "../assets/a-man-with-laptop.jpg";
 import programmers from "../assets/two-programmers-staring-at-a-screen.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBook } from "@fortawesome/free-solid-svg-icons";
 
 const courses = [
     {
@@ -68,7 +70,7 @@ const Course = () => {
             <div className="course-in">
                 <div className="course-heading">
                     <p className="course-eyebrow">Career-focused programs</p>
-                    <h1>Courses We Offer</h1>
+                    <h1>Courses We Offer <FontAwesomeIcon icon={faBook} /> </h1>
                     <p>
                         Explore industry-relevant courses designed to help students build practical skills,
                         confidence, and a strong path into today&apos;s digital careers.

@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Pages.css";
-import { faEnvelope, faPerson } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faMoneyCheckDollar, faPerson } from "@fortawesome/free-solid-svg-icons";
 
 const Fees = () => {
     return (
         <div>
-            <h1>Fees Form</h1>
+            <h1>Fees Form <FontAwesomeIcon icon={faMoneyCheckDollar} /> </h1>
             <form action="/submit-admission" className="main-form">
                 <label htmlFor="">Fee Option</label>
                 <div>

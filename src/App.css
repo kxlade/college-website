@@ -33,6 +33,7 @@
     border-radius: 1.5rem;
     background: rgba(10, 18, 31, 0.74);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
+    -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
 }
 
@@ -132,6 +133,10 @@
     color: #ffffff;
 }
 
+.text-muted {
+    color: #94a3b8;
+}
+
 .nav-cta {
     background: #dce8f7;
     color: #0f1a2b;
@@ -164,6 +169,7 @@
         border-radius: 1.5rem;
         background: rgba(9, 17, 30, 0.84);
         box-shadow: 0 24px 50px rgba(0, 0, 0, 0.32);
+        -webkit-backdrop-filter: blur(22px) saturate(150%);
         backdrop-filter: blur(22px) saturate(150%);
         isolation: isolate;
     }
@@ -175,6 +181,7 @@
         background:
             linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(111, 168, 220, 0.04)),
             rgba(10, 18, 31, 0.42);
+        -webkit-backdrop-filter: blur(24px) saturate(160%);
         backdrop-filter: blur(24px) saturate(160%);
         z-index: 0;
     }
@@ -222,10 +229,57 @@
         display: block;
         border: 0;
         background: rgba(5, 10, 18, 0.34);
+        -webkit-backdrop-filter: blur(12px);
         backdrop-filter: blur(12px);
         cursor: pointer;
     }
 }
+
+.app-h1, .app-h1_2, .app-h1_3 {
+    display: none;
+}
+
+/* For Mobiles Text */
+
+@media (min-width: 100px) and (max-width: 600px) {
+    .App {
+        display: none;
+    }
+
+    .app-h1 {
+        display: inline;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px){
+    .App{
+        display: none;
+    }
+    .app-h1{
+        display: none;
+    }
+    .app-h1_2{
+        display: inline;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1000px){
+    .App{
+        display: none;
+    }
+    .app-h1{
+        display: none;
+    }
+    .app-h1_2{
+        display: none;
+    }
+    .app-h1_3{
+        display: inline;
+    }
+}
+
+/* For Mobiles Text */
+
 
 @media (max-width: 640px) {
     .site-header {

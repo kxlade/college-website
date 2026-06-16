@@ -60,10 +60,6 @@ const Header = ({ onNavigate }) => {
         onNavigate(page);
     };
 
-
-
-
-
     return (
         <header>
             <div className="header-main">
@@ -78,9 +74,15 @@ const Header = ({ onNavigate }) => {
                         needed to excel in the ever-evolving tech industry.
                     </p>
 
-                    <button className="addmision-btn"
+                    <button
+                        className="addmision-btn"
                         onClick={() => handleNavigationClick("admission")}
-                    >Admission Open</button>
+                    >
+                        Admission Open
+                    </button> <br />
+                    <button className="dashboard-btn" onClick={() => handleNavigationClick("dashboard")}>
+                        School Dashboard
+                    </button>
                 </main>
             </div>
         </header>

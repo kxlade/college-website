@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPerson, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faGraduationCap, faPerson, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./Pages.css";
 
 const Admission = () => {
     return (
         <div>
-            <h1>Admission Form</h1>
+            <h1>Admission Form <FontAwesomeIcon icon={faGraduationCap} /></h1>
             <form action="/submit-admission" className="main-form">
                 <label htmlFor="name">Name :</label>
                 <div>

@@ -36,7 +36,7 @@
     color: #d7e4f5;
 }
 
-.addmision-btn {
+.addmision-btn, .dashboard-btn {
     margin-top: 2rem;
     padding: 0.95rem 1.4rem;
     border: 1px solid rgba(220, 232, 247, 0.2);
@@ -49,9 +49,17 @@
     transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
-.addmision-btn:hover {
+.addmision-btn:hover, .dashboard-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 24px 40px rgba(0, 0, 0, 0.28);
+}
+
+.dashboard-btn{
+    padding: 0.80rem 1.2rem;
+    background: transparent;
+    color: #dce8f7;
+    border: 1px solid rgba(220, 232, 247, 0.4);
+    margin-left: 1rem;
 }
 
 @media (max-width: 700px) {
